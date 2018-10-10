@@ -121,7 +121,7 @@ function loadEmojis() {
     var emojis = require('emojis-list');
     $('#emojis').empty();
     for (emoji in emojis) {
-        $('#emojis').append(emojis[emoji] + " ").click(function(){console.log(emojis[emoji])});
+        $('#emojis').append(emojis[emoji] + " ");
     }
 }
 
