@@ -420,8 +420,8 @@ $(function() {
     })
 
     // #11 sending a message with #enter button
-    $(document).keypress(function(e) {
-        if(e.which == 13) {
-            sendMessage();
-        }
-    });
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        sendMessage();
+    }
+});
