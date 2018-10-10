@@ -121,7 +121,7 @@ function loadEmojis() {
     var emojis = require('emojis-list');
     $('#emojis').empty();
     for (emoji in emojis) {
-        $('#emojis').append(emojis[emoji] + " ");
+        $('#emojis').append(emojis[emoji] + " ").click(function(){console.log(emojis[emoji])});
     }
 }
 
@@ -418,3 +418,10 @@ $(function() {
             currentChannel.messages[index].update();});
         }, 10000);
     })
+
+    // #11 sending a message with #enter button
+    $(document).keypress(function(e) {
+        if(e.which == 13) {
+            sendMessage();
+        }
+    });
