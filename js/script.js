@@ -154,6 +154,10 @@ function Message(text) {
             this.element.find('button').removeClass('accent');
 
         }
+        if (expiresIn > 5) {
+            this.element.find('button').addClass('accent');
+            this.element.find('button').removeClass('primary');
+        }
         
     }
 }
@@ -407,6 +411,7 @@ function abortCreationMode() {
 // #11 #initialize the app
 $(function() {
     listChannels(compareNew); 
+    console.log('channelslisted');
     loadEmojis();
     console.log('App is initalized');
 
