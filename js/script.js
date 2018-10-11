@@ -411,7 +411,6 @@ function abortCreationMode() {
 // #11 #initialize the app
 $(function() {
     listChannels(compareNew); 
-    console.log('channelslisted');
     loadEmojis();
     console.log('App is initalized');
 
